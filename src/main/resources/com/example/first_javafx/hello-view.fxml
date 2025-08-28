@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.first_javafx.HelloController" spacing="10" alignment="CENTER" prefWidth="320" prefHeight="300">
+    <Label fx:id="welcomeText" text="Hello!"/>
+    <Button text="Say Hello" onAction="#onHelloButtonClick"/>
+    <Button text="Show Alert" onAction="#onShowAlertClick"/>
+    <HBox spacing="5" alignment="CENTER">
+        <TextField fx:id="inputField" prefWidth="150" onAction="#onUpdateLabelClick"/>
+        <Button text="Update Label" onAction="#onUpdateLabelClick"/>
+    </HBox>
+</VBox>
